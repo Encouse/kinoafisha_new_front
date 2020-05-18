@@ -25,7 +25,7 @@ export interface BriefFilm {
   kid: number;
 }
 
-export interface Film {
+export interface FilmModel {
   id: number;
   year: number;
   note: string; // to change in api
