@@ -18,6 +18,10 @@ export interface FilmModelOldApi {
   poster : string;
 }
 
+export interface FilmList {
+  BriefFilm[];
+}
+
 export interface BriefFilm {
   id: number;
   year: number;
