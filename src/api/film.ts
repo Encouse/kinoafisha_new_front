@@ -1,5 +1,13 @@
 import service from '@/api/base.ts'
 import { FilmModel } from "@/film-model"
+import { BriefFilm } from "@/film-model"
+
+
+export const getListOfFilms = async () => {
+  let response = await service.get('/films')
+  console.log(response)
+  return response.data
+}
 
 export const getFilmById = async (id: number) => {
   let response = await service.get<FilmModel[]>(
