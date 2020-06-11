@@ -1,27 +1,24 @@
 <template>
+  <v-app>
     <div id="app">
-        <router-view />
+      <router-view/>
     </div>
+  </v-app>
 </template>
 
-<style lang="scss">
-// базовые стили, которые применяются глобально
-html {
-    height: 100%;
+<script>
+// Главный компонент, принимает текщее значение роутера
+export default {
+  name: 'App',
 }
+</script>
 
-body {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    height: 100%;
-}
-
+<style lang = 'scss'>
 #app {
-    margin: 0;
-    display: flex;
-    height: inherit;
-    width: inherit;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+
 }
 </style>
